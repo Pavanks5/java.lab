@@ -1,0 +1,38 @@
+/
+
+
+// class age{
+//     int my_age;
+//     age(int x)
+//     {
+//        
+        
+//     }
+    
+// }
+class under_age //extends age
+{
+  
+  
+  void test(int my_age)
+  {
+      if(my_age<18)
+      {
+          throw new ArithmeticException("sorry!, your age  donot permit you to vote");
+      }
+
+      else
+      {
+          System.out.println("you can vote ");
+      }
+  }
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    
+// 	age c1=new age(15);
+	under_age c2=new under_age();
+	c2.test(20);
+	}
+}
