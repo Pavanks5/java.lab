@@ -1,0 +1,22 @@
+
+
+interface number{
+    public void  val(int n);
+}
+
+class A implements number{
+    int cube;
+    public void val(int n)
+    {
+     System.out.println(n*n*n);
+     
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	    A c1=new A();
+	    c1.val(10);
+	}
+}
