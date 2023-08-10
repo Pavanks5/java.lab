@@ -1,0 +1,69 @@
+
+import java.util.Random;   
+class a1 extends Thread
+{
+   
+  
+    
+    void sqr()
+    {
+         a3 t1=new a3();
+         int x=t1.create;
+        if(x%2==0)
+        {
+            System.out.println(x*x);
+        }
+    }
+}
+
+
+class a2 extends Thread
+{
+   
+    
+    void cub()
+    {
+         a3 t2=new a3();
+          int y=t2.a;
+        if(y%2!=0)
+        {
+            System.out.println(x*x*x);
+        }
+    }
+}
+
+class a3 extends Thread
+{
+    void create()
+    {
+Random random = new Random();   
+	    int a=random.nextInt(200);
+	    System.out.println(a);
+
+}
+
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    a3 x=new a3();
+	    x.create();
+	    a1 y=new a1();
+	    y.sqr();
+	    a2 z=new a2();
+	    z.cub();
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	    
+	}
+}
